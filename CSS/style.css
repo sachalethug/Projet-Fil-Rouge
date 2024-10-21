@@ -3,31 +3,69 @@ body {
     background-attachment: fixed;
 }
 
+
+
+
+nav{
+    font-size: 150%;
+    position: absolute;
+    right: 3%;
+    top: 4%;
+
+}
+
+
+
 h1{
     font-size: 150%;
     font-family: 'Yeseva One';
     font-weight: 100;
     color: rgb(255, 255, 255);
-    text-align: right
+    position: absolute;
+    left: 3%;
+    top: 2%;
 
 }
 
 h2{
-    font-size: 200%;
+    font-size: 300%;
     font-family: 'Yeseva One';
     color: rgb(255, 255, 255);
-    position: fixed;
-    left: 140px;
-    top: 75px;
+    position: absolute;
+    left: 15%;
+    top: 10%;
 
 
 }
 
 h3{
-    font-size: medium;
-    position: fixed;
+    font-size: 200;
+    position: absolute;
     font-family: 'Montserrat';
-    left: 140px;
-    top: 235px;
-    color: rgb(255, 255, 255);
+    left: 15%;
+    top: 35%;
+    color: rgb(91, 103, 107);
+}
+
+h4{
+    position: absolute;
+    text-decoration: none;
+    top: 55%;
+    left: 44%;
+
+}
+
+h5{
+    position: absolute;
+    top: 75%
+
+
+    
+}
+
+.parent {
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap;
+
 }
