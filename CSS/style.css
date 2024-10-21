@@ -1,0 +1,33 @@
+body {
+    background-color: #011820;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 150%;
+    font-family: 'Yeseva One';
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    text-align: right
+
+}
+
+h2{
+    font-size: 200%;
+    font-family: 'Yeseva One';
+    color: rgb(255, 255, 255);
+    position: fixed;
+    left: 140px;
+    top: 75px;
+
+
+}
+
+h3{
+    font-size: medium;
+    position: fixed;
+    font-family: 'Montserrat';
+    left: 140px;
+    top: 235px;
+    color: rgb(255, 255, 255);
+}
