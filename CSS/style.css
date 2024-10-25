@@ -51,14 +51,48 @@ a{
     padding: 5px 10px; 
 }
 
-button{
-    color: #FFFFFF;
-    font-family: 'italic';
-    padding: 5px 10px; 
-    background-color: transparent;
 
-    white-space: nowrap; 
-}
+
+button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #011820;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+  }
+  
+  button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #00d39d;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    color: #161616;
+  }
+  
+  button:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+  
 
 h4{
     display: flex;
@@ -89,12 +123,12 @@ h5{
     flex-direction: column;
  }
 
-  body {
-    margin: 0 5%;
- }
- 
  .h4 {    
     padding: 1px 1px; 
+}
+
+.button {    
+    font-size: 10%;
 }
  
  h2 {
@@ -143,8 +177,6 @@ h5{
       padding: 5px 100px; 
   }
   
-
-
   .grid {
       grid-template-columns: repeat(4, 1fr); 
       gap: 20px; 
