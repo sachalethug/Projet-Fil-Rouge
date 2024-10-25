@@ -1,5 +1,9 @@
 header {
     border-bottom: 1px solid #808080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
 }
 
 body {
@@ -8,68 +12,146 @@ body {
 }
 
 
-
-
 nav{
     font-size: 150%;
-    position: absolute;
-    right: 3%;
-    top: 4%;
-
+    position: relative;
+    padding: 5px 10px; 
 }
-
-
 
 h1{
     font-size: 150%;
     font-family: 'Yeseva One';
     font-weight: 100;
     color: rgb(255, 255, 255);
-    position: absolute;
-    left: 3%;
-    top: 2%;
-
 }
 
 h2{
     font-size: 300%;
     font-family: 'Yeseva One';
     color: rgb(255, 255, 255);
-    position: absolute;
-    left: 15%;
-    top: 10%;
-
-
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 125px;
 }
 
 h3{
-    font-size: 200;
-    position: absolute;
+    font-size: 115%;
     font-family: 'Montserrat';
-    left: 15%;
-    top: 35%;
     color: rgb(91, 103, 107);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 125px;
+}
+
+a{
+    padding: 5px 10px; 
+}
+
+button{
+    color: #FFFFFF;
+    font-family: 'italic';
+    padding: 5px 10px; 
+    background-color: transparent;
+
+    white-space: nowrap; 
 }
 
 h4{
-    position: absolute;
-    text-decoration: none;
-    top: 55%;
-    left: 44%;
-
+    display: flex;
+    justify-content: center ;
 }
 
 h5{
-    position: absolute;
-    top: 75%
-
-
-    
+    position: relative;
+    top: 75%;
+    padding: 0px 125px;
 }
 
-.parent {
-    display: flex;
-    justify-content: center ;
-    flex-wrap: wrap;
+.grid {
+    display: grid;
+    gap: 10px
+}
 
+.grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 20px;
+    flex-direction: column;
+ }
+
+  body {
+    margin: 0 5%;
+ }
+ 
+ .h4 {    
+    padding: 1px 1px; 
+}
+ 
+ h2 {
+    margin: 0 5%; 
+    padding: 25px 1px; 
+}
+
+ h3 {
+    margin: 0 5%; 
+    padding: 1px 1px; 
+}
+
+
+  .grid {
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px; 
+      
+  }
+
+  .grid img:nth-child(n + 10) {
+      display: none; 
+  }
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+
+  .grid {    padding: 5px 10px; 
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 15px; 
+      padding: 5px 125px; 
+  }
+
+
+  .grid img:nth-child(n + 16) {
+      display: none; 
+  }
+}
+
+@media (min-width: 1024px) {
+
+ 
+  body {
+      margin: 0 5%; 
+      padding: 5px 100px; 
+  }
+  
+
+
+  .grid {
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 20px; 
+      padding: 5px 125px; 
+  }
+
+  .grid img:nth-child(n + 16) {
+      display: none; 
+  }
 }
