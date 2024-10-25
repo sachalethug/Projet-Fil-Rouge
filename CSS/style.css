@@ -106,6 +106,15 @@ h5{
     padding: 0px 125px;
 }
 
+footer {
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: 40px;
+    font-size: 14px;
+    color: rgb(91, 103, 107);
+    font-weight: 800;
+  }
+  
 .grid {
     display: grid;
     gap: 10px
@@ -116,6 +125,8 @@ h5{
     height: 105%;
     display: block;
   }
+
+
 
 @media (max-width: 600px) {
 
